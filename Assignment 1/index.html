@@ -13,9 +13,10 @@
     ></script>
   </head>
   <body>
+    <!-- header  -->
     <header class="navbar">
       <div class="container">
-        <nav class="flex justify-between item-center">
+        <nav class="flex justify-between item-center column">
           <a class="brand" href="#">
             <img src="media/logo.png" alt="logo" />
           </a>
@@ -36,8 +37,8 @@
     <main>
       <!-- Hero -->
       <section class="padding hero">
-        <article class="container flex item-center justify-between">
-          <div class="flex-48">
+        <article class="container flex item-center justify-between wrap">
+          <div class="flex-48 flex-100 order-1">
             <h1 class="heading">What is Lorem ipsum?</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -53,7 +54,7 @@
             </p>
             <a class="btn" href="#">read more</a>
           </div>
-          <div class="flex-48 right-col">
+          <div class="flex-48 right-col flex-100">
             <img src="media/01.png" alt="01" />
           </div>
         </article>
@@ -62,8 +63,8 @@
       <section class="padding blog">
         <div class="container">
           <h2 class="text-center">our blog</h2>
-          <div class="flex justify-between">
-            <article class="flex-30">
+          <div class="flex justify-between wrap">
+            <article class="flex-30 flex-100">
               <div>
                 <img src="media/02.png" alt="02" />
               </div>
@@ -74,9 +75,9 @@
                 sed exercitationem ducimus quasi, blanditiis nobis. Ipsa numquam
                 laboriosam modi.
               </p>
-              <a class="btn1" href="#">read more</a>
+              <a class="btn" href="#">read more</a>
             </article>
-            <article class="flex-30">
+            <article class="flex-30 flex-100">
               <div>
                 <img src="media/03.png" alt="02" />
               </div>
@@ -87,9 +88,9 @@
                 sed exercitationem ducimus quasi, blanditiis nobis. Ipsa numquam
                 laboriosam modi.
               </p>
-              <a class="btn1" href="#">read more</a>
+              <a class="btn" href="#">read more</a>
             </article>
-            <article class="flex-30">
+            <article class="flex-30 flex-100">
               <div>
                 <img src="media/04.png" alt="02" />
               </div>
@@ -100,11 +101,21 @@
                 sed exercitationem ducimus quasi, blanditiis nobis. Ipsa numquam
                 laboriosam modi.
               </p>
-              <a class="btn1" href="#">read more</a>
+              <a class="btn" href="#">read more</a>
             </article>
           </div>
         </div>
       </section>
     </main>
+    <!-- footer  -->
+    <footer class="padding footer">
+      <div class="container flex justify-between item-center column">
+        <small>&copy; Altcampus</small>
+        <nav>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>

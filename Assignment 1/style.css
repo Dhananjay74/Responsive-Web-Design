@@ -144,7 +144,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
 
@@ -193,10 +193,6 @@ body {
   flex-wrap: wrap;
 }
 
-.column {
-  flex-direction: column;
-}
-
 /* column */
 
 .flex-15 {
@@ -237,7 +233,7 @@ body {
 
 /* Padding */
 
-.padding{
+.padding {
   padding: 2rem 0;
 }
 
@@ -314,7 +310,7 @@ body {
 
 /* Hero */
 
-.hero{
+.hero {
   background-color: #e9ecfd;
 }
 
@@ -327,11 +323,11 @@ body {
 }
 
 .hero p {
-  color: #8e8a8a
+  color: #8e8a8a;
 }
 
-.right-col img{
- width: 100%;
+.right-col img {
+  width: 100%;
 }
 
 /* blog  */
@@ -349,16 +345,88 @@ h2 {
   font-weight: 500;
 }
 
-.blog p{
+.blog p {
   font-size: 0.8rem;
-  color: #8e8a8a
+  color: #8e8a8a;
 }
 
 .blog img {
   width: 100%;
 }
 
-.btn {
-  font-size: 0.7;
-padding: 0.75rem 2rem;
+.blog .btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+/* footer  */
+
+.footer {
+  background-color: #212946;
+  color: #ffff;
+}
+
+.footer small {
+  font-size: 1.4rem;
+}
+
+.footer a {
+  margin-left: 1.6rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Mobile responsive view */
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  html {
+    font-size: 10px;
+  }
+  .flex-100 {
+    flex: 0 1 100%;
+    margin: 1rem 0;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .order-1 {
+    order: 1;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .navbar {
+    padding: 2rem 0;
+  }
+  .brand {
+    margin-bottom: 2rem;
+  }
+  .nav.item {
+    margin: 1.5rem 1.5rem;
+  }
+  .footer a {
+    margin: 2rem 1.5rem 0 1.5rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
