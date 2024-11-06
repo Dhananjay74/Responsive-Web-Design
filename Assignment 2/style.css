@@ -1,0 +1,387 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* My Resets */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --primary: #f9234d;
+  --secondary: #3527a9;
+  --teriary: #dfecff;
+  --text-color: #01122d;
+  --para-color: #6a6970;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  line-height: 1.5;
+}
+
+/* custom style */
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Padding */
+
+.padding {
+  padding: 2rem 0;
+}
+
+/* flex */
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* column */
+
+.flex-10 {
+  flex: 0 1 10%;
+}
+
+.flex-15 {
+  flex: 0 1 15%;
+}
+
+.flex-18 {
+  flex: 0 1 18%;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-23 {
+  flex: 0 1 23%;
+}
+
+.flex-25 {
+  flex: 0 1 25%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-40 {
+  flex: 0 1 40%;
+}
+
+.flex-48 {
+  flex: 0 1 48%;
+}
+
+.flex-50 {
+  flex: 0 1 50%;
+}
+
+.flex-60 {
+  flex: 0 1 60%;
+}
+
+.grow {
+  flex: 1 1 auto;
+}
+
+.width-full {
+  width: 100%;
+}
+
+/* Padding */
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 0.2rem;
+  background-color: var(--primary);
+  color: white;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+}
+
+.padding {
+  padding: 2rem 0;
+}
+
+.margin {
+  margin: 2rem 0 1.2rem 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Center Elements  */
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text */
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+/* Header */
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nav-menu a {
+  margin-left: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-menu li {
+  text-transform: uppercase;
+}
+
+.nav-menu a:hover {
+  color: var(--primary);
+}
+
+.brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#toggle,
+.bar {
+  display: none;
+}
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(53, 39, 169, 0.7), rgba(53, 39, 169, 0.7)),
+    url("media/banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero img {
+  width: 100%;
+  margin-top: 7rem;
+}
+
+.left-col {
+  margin-top: 7rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.left-col h2 {
+  color: white;
+  padding-right: 10rem;
+}
+
+.left-col span {
+  color: var(--primary);
+}
+
+.left-col p {
+  color: rgb(255 255 255);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
